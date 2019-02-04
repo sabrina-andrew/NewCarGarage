@@ -11,7 +11,7 @@ namespace CarGarage
 
         static void MainMenu()
         {
-            ParkingGarage myParkingGarage = new ParkingGarage();
+            Garage myParkingGarage = new Garage();
             bool run = true;
 
             do
@@ -67,7 +67,7 @@ namespace CarGarage
                         myParkingGarage.InteractionMenu();
                         break;
                     case "5":
-                        myParkingGarage.RemoveCar();
+                        myParkingGarage.RemoveCar(myParkingGarage.CarSelectionMenu());
                         break;
                     default:
                         Console.WriteLine("Please follow the instructions");
@@ -77,7 +77,7 @@ namespace CarGarage
                 }
 
             } while (run);
-
+            
         }
     }
 }

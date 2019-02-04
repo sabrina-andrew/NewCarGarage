@@ -3,17 +3,17 @@ using Xunit;
 
 namespace CarGarage.Tests
 {
-   /* public class GarageTests
+   public class GarageTests
     {
         [Fact]
         public void shouldAddCarToGarage()
         {
             // Tests AddCar() method
             // Arrange
-            var xxx = new ParkingGarage();
+            var xxx = new Garage();
 
             // Act
-            xxx.AddCar();
+            xxx.AddNewCar();
 
             // Assert
             Assert.NotEmpty(xxx.ListOfCars);
@@ -24,10 +24,10 @@ namespace CarGarage.Tests
         {
             // Tests RemoveCar() method
             // Arrange
-            var xxx = new ParkingGarage();
+            var xxx = new Garage();
 
             // Act
-            xxx.AddCar();
+            xxx.AddNewCar();
             xxx.RemoveCar(0);
 
             // Assert
@@ -39,7 +39,7 @@ namespace CarGarage.Tests
         {
             // Tests FuelAllCars() method
             // Arrange
-            var xxx = new ParkingGarage();
+            var xxx = new Garage();
 
             // Act
             xxx.ListOfCars.Add(new CyberCar(50));
@@ -59,11 +59,11 @@ namespace CarGarage.Tests
             // Program class should then let you choose what you want to do with that car
             // You do not need to test user input in the Program class
 
-            var xxx = new ParkingGarage();
+            var xxx = new Garage();
 
-            xxx.TestDrive(new CyberCar());
+            xxx.TestDrive();
 
-            Assert.Equal(100, xxx.TestDrive);
+            //Assert.Equal(100, xxx.TestDrive());
         }
 
         [Fact]
@@ -74,13 +74,13 @@ namespace CarGarage.Tests
             // Garage class should provide cars
             // Program class should list all stats
 
-            var xxx = new ParkingGarage();
+            var xxx = new Garage();
 
             xxx.ListOfCars.Add(new CyberCar());
             xxx.ListOfCars[0].AddFuel();
 
             Assert.Equal(100, xxx.ListOfCars[0].GasLevel);
-            */
+            
 
         }
     }
